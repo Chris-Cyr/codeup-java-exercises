@@ -8,6 +8,7 @@ public class Student {
     private ArrayList<Double> grades = new ArrayList<>();
 
 
+
     public static void main(String[] args) {
         ArrayList<Double> chrisGrades = new ArrayList<>();
         Student chris = new Student("Chris", chrisGrades, "chriso17");
@@ -41,6 +42,9 @@ public class Student {
         this.grades = grades;
     }
 
+    public ArrayList<Double> getGrades(ArrayList<Double> grades){
+        return grades;
+    }
     public double getGradeAverage(ArrayList<Double> grades) {
         Double sum = 0.0;
         if (!grades.isEmpty()) {
