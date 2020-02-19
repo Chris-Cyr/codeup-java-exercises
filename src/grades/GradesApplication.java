@@ -9,6 +9,7 @@ public class GradesApplication {
         HashMap<String, Student> students = new HashMap<>();
 
         ArrayList<ArrayList<Double>> allGrades = new ArrayList<>();
+        System.out.println(allGrades.size());
 
 
 

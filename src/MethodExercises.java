@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class MethodExercises {
 
     public static void main(String args[]) {
-//        sayHello("Hello", "Chris!");
-//        addition(70, 7);
-//        subtraction(70, 7);
-//        multiplication(70, 7);
-//        division(70, 7);
-//        modulus(70, 8);
-//        getInteger(1, 10);
-//        factorial(1);
-//        dice(1);
-//        binary();
+        sayHello("Hello", "Chris!");
+        addition(70, 7);
+        subtraction(70, 7);
+        multiplication(70, 7);
+        division(70, 7);
+        modulus(70, 8);
+        getInteger(1, 10);
+        factorial(1);
+        dice(1);
+        binary();
         binarySum("10","11");
         System.out.print(binarySum("10", "11"));
     }
