@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class StudyForInterview {
 
     public static void main(String[] args) {
-        fizzBuzz();
+//        fizzBuzz();
+//        reverseString();
+        reverseSentence();
     }
 
     public static void fizzBuzz(){
@@ -26,6 +28,40 @@ public class StudyForInterview {
              System.out.println(userNumber);
              fizzBuzz();
          }
+
+    }
+
+    public static void reverseString() {
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("Please insert a string");
+        String userInput = inputScanner.nextLine();
+        char[] in = userInput.toCharArray();
+        int begin = 0;
+        int end = in.length - 1;
+        char temp;
+        while (end > begin) {
+            temp = in[begin];
+            in[begin] = in[end];
+            in[end] = temp;
+            end--;
+            begin++;
+        }
+        System.out.println(new String(in));
+        reverseString();
+    }
+
+    public static void reverseSentence() {
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("Please enter a sentence: ");
+        String userInput = inputScanner.nextLine();
+        String[] words = userInput.split(" ");
+        String rev = "";
+        for(int i = words.length -1; i >= 0; i--)
+        {
+            rev += words[i] + " ";
+        }
+        System.out.println(rev);
+        reverseSentence();
 
     }
 }
