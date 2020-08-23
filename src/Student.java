@@ -56,7 +56,7 @@ public class Student {
         if(this.drinksCoffee)
             output += "I drink coffee in " + this.location + ".";
         else
-            output += "I don't drink ocffee in " + this.location + ".";
+            output += "I don't drink coffee in " + this.location + ".";
         return output;
 
 

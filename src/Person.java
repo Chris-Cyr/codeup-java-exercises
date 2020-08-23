@@ -18,9 +18,9 @@ public class Person {
         return this.name;
     }
 
-    public void setName(String inputName){
-        this.name = inputName;
-    }
+//    public void setName(String inputName){
+//        this.name = inputName;
+//    }
     public void sayHello(){
         System.out.println("Hello, " + this.name + ". " + this.age + " is soooo old :(");
     }
