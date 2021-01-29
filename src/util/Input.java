@@ -2,13 +2,16 @@ package util;
 import java.util.Scanner;
 public class Input {
     private Scanner scanner;
+
     public Input() {
         this.scanner = new Scanner(System.in);
     }
+
     public String getString() {
         System.out.print("Enter a string: ");
         return this.scanner.nextLine();
     }
+
     public String getString(String prompt) {
         System.out.print(prompt);
         return this.scanner.nextLine();
@@ -55,4 +58,6 @@ public class Input {
         System.out.print(prompt);
         return this.scanner.nextDouble();
     }
+
+
 }
